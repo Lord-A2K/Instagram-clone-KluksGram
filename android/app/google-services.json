@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "241486768382",
+    "project_id": "kluksgram",
+    "storage_bucket": "kluksgram.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241486768382:android:aa3b644ffd01d53273ddaf",
+        "android_client_info": {
+          "package_name": "com.example.kluksgram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "241486768382-copo4a7kqpt613k412mqbcf0fsmosq94.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAENvDmIPSZUZnZW3KN_PGh8K15RASVer0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "241486768382-copo4a7kqpt613k412mqbcf0fsmosq94.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
