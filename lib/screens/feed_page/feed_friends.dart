@@ -30,7 +30,9 @@ class FeedFriends extends StatelessWidget {
                 children: [
                   Center(
                     child: PostCard(
-                      snap: snapshot.data!.docs[index].data(),
+                      snap: snapshot
+                          .data!.docs[snapshot.data!.docs.length - index - 1]
+                          .data(),
                     ),
                   ),
                   index == 0

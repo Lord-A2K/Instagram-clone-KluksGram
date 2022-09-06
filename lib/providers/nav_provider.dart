@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class NavProvider with ChangeNotifier {
-  int _navIndex = 1;
+  int _navIndex = 0;
   int get getNavIndex => _navIndex;
   bool _navIsShowing = true;
   bool get getNavIsShowing => _navIsShowing;
