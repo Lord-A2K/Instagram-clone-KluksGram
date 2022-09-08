@@ -264,6 +264,8 @@ class AddPostAppBar extends StatelessWidget {
                     _userProvider.getUser!.uid,
                     _userProvider.getUser!.username,
                     _userProvider.getUser!.photoUrl);
+                FocusManager.instance.primaryFocus?.unfocus();
+                
               }
             },
             child: Container(

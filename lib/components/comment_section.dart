@@ -73,10 +73,21 @@ class _CommentSectionState extends State<CommentSection> {
                       if (snapshot.hasData) {
                         return ListView.builder(
                           itemCount: (snapshot.data! as dynamic).docs.length,
-                          itemBuilder: (context, index) => CommentCard(
-                            snap: snapshot.data!
-                                .docs[snapshot.data!.docs.length - index - 1]
-                                .data(),
+                          itemBuilder: (context, index) => Column(
+                            children: [
+                              CommentCard(
+                                snap: snapshot
+                                    .data!
+                                    .docs[
+                                        snapshot.data!.docs.length - index - 1]
+                                    .data(),
+                              ),
+                              Divider(
+                                color: Colors.black54,
+                                
+                                thickness: 2,
+                              ),
+                            ],
                           ),
                         );
                       } else {
@@ -124,7 +135,6 @@ class _CommentSectionState extends State<CommentSection> {
                         _commentController.text = '';
                         showSnackbar('comment posted.', context);
                         FocusManager.instance.primaryFocus?.unfocus();
-                        
                       }
                     },
                     child: Container(
